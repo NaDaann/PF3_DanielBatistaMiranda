@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Desafio TPA Daniel 3b2
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	
+	<div class="container">
+		<div class="img">
+			
+		</div>
+		<div class="login-content">
+			<form action="index.html">
+				<img src="img/avatar.svg">
+				<h2 class="title">Bem Vindo(a)</h2>
+				<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Nome:</h5>
+           		   		<input type="text" class="input" id= "nome" required="required">
+           		   </div>
+           		</div>
+				   <div class="input-div one">
+					<div class="i">
+						<i class="fa fa-briefcase" aria-hidden="true"></i>
+					</div>
+					<div class="div">
+							<h5>Digite o valor a ser aplicado:</h5>
+							<input type="text" min="1" step="any" class="input" id= "ValoAPlicadoMensalmente" required="required">
+					</div>
+				 </div>
+			 
+           		<div class="input-div pass">
+           		   <div class="i"> 
+					<i class="fa fa-percent" aria-hidden="true"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Taxa de juros :</h5>
+           		    	<input type="text" class="input" name="taxaJuros" id= "taxadeJuros" required="required">
+            	   </div>
+            	</div>
+				<div class="input-div pass">
+					<div class="i"> 
+						<i class="fa fa-credit-card" aria-hidden="true"></i>
+					</div>
+					<div class="div">
+						 <h5>Número de parcelas mensais:</h5>
+						 <input type="number" class="input" name="prestacoes" id= "calcularprestacoes" required="required">
+				 </div>
+			  </div>
+				<div class="div" style="margin-top: 10%; margin-bottom: 10%; display: block;"><h3 class="title" id="resultado"></h3>
+				<h3 class="title" id="resultado2" style="display: block;"></h3></div>
+				<input type="button" class="btn" id="CalcularKM" value="Confirmar" >
+            	<a href=" "><input type="button" class="btnRed"  id="limpar" value="Limpar" ></a>
+            </form>
+        </div>
+    </div>		
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
